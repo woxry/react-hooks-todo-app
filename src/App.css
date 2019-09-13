@@ -1,33 +1,67 @@
-.App {
+.app {
+  background: #209cee;
+  padding: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.wrapper h1{
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-list input {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: lightgrey solid 1px;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: 14px;
+  margin-bottom: 6px;
+  border-radius: 3px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 50px;
+}
+
+.todo button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 0;
+  border-radius: 4px;
+  line-height: 16px;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo .removeButton {
+  background-color: #f44336;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo .completeButton {
+  background-color: #4caf50;  
 }
